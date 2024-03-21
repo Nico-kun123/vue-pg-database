@@ -1,0 +1,134 @@
+@import "./base.css";
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.blue {
+  text-decoration: none;
+  color: hsl(197, 71%, 73%);
+  transition: 0.4s;
+  /* padding: 3px; */
+  line-height: normal;
+}
+
+p {
+  line-height: normal;
+  margin-top: 1rem;
+  padding: auto;
+  width: 100%;
+}
+
+p::first-letter {
+  padding-left: 2rem;
+}
+
+ol {
+  margin-top: 1rem;
+}
+
+.separator {
+  background-color: lightgrey;
+  padding-top: 1px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+table {
+  border-radius: 1px;
+  margin-top: 2rem;
+  /* display: flex; */
+  width: 100%;
+
+  /* border-color: aliceblue;
+  border-style: solid; */
+  /* padding: 1em; */
+}
+
+th,
+td {
+  text-align: center;
+  /* border-radius: 1px; */
+  border-width: 1px;
+  border-color: aliceblue;
+  border-style: ridge;
+  width: fit-content;
+}
+
+th {
+  color: black;
+  background-color: skyblue;
+  font-weight: bold;
+}
+
+thead,
+tbody {
+  width: max-content;
+  padding: 1rem;
+}
+
+ul {
+  list-style: disc;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  width: fit-content;
+}
+
+button {
+ background-color: skyblue;
+ padding: 0.5em;
+ border-radius: 5rem;
+ margin-top: 1rem;
+}
+button:hover {
+  background-color: hsla(197, 71%, 73%, 0.807);
+}
+
+.important {
+  color:rgb(0, 0, 0);
+  background-color: orange;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 2px;
+}
+
+.radios {
+ display:  flex;
+ flex-direction: row;
+ align-items: baseline;
+ margin-left: 1rem;
+}
+
+input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(197, 71%, 73%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    /* place-items: center; */
+  }
+
+  #app {
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    /* padding: 0 2rem; */
+  }
+
+  h1 {
+    text-align: center;
+  }
+}
